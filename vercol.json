@@ -2,7 +2,7 @@
     "version": 3,
     "builds": [
       {
-        "src": "api/index.py",
+        "src": "ecommerce/wsgi.py",
         "use": "@vercel/python",
         "config": {
           "maxLambdaSize": "150mb",
@@ -24,7 +24,7 @@
       },
       {
         "src": "/(.*)",
-        "dest": "api/index.py"
+        "dest": "ecommerce/wsgi.py"
       }
     ]
 }
